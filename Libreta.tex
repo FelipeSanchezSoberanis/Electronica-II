@@ -1,0 +1,52 @@
+\documentclass[12pt, letterpaper]{extarticle}
+
+\input{Configs}
+
+\begin{document}
+
+% \subfile{Portada.tex}
+
+% \newpage
+
+% \tableofcontents
+
+% \newpage
+
+\newSection{Aplicaciones de los amplificadores operacionales}
+
+\newSubSection{Amplificador restador inversor}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Media/amplificador_restador_inverso.png}
+    \caption{Amplificador restador inversor.}
+    \label{Fig: Amplificador restador inversor}
+\end{figure}
+
+\begin{equation*}
+    V_{out} = V_{2}\left(\frac{(R_{1}+R_{2})R_{4}}{(R_{4}+R_{3})R_{1}}\right)
+             -V_{1}\left(\frac{R_{2}}{R_{1}}\right)
+\end{equation*}
+
+En el caso de que $R_{1}=R_{2}=R_{3}=R_{4}=R$:
+\begin{equation*}
+    V_{out} = V_{2} - V_{1}
+\end{equation*}
+
+\newSubSection{Amplificador diferenciador (derivador) inversor}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Media/amplificador_diferenciador.png}
+    \caption{Amplificador diferenciador}
+    \label{Fig: Amplificador diferenciador}
+\end{figure}
+
+\begin{equation*}
+    V_{out} = -RC\left(\frac{dV_{in}(t)}{dt}\right)
+\end{equation*}
+
+\newSubSection{Amplificador integrador}
+
+
+\end{document}
